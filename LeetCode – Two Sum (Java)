@@ -22,7 +22,7 @@ public class TwoSum {
 	public static void main(String[] args) {
 		int[] nums = { 2, 7, 11, 15, 16, 111, 569, 777, 895, 963 };
 
-		int[] temp = new Solution1().twoSum(nums, 965);
+		int[] temp = new Solution().twoSum(nums, 965);
 		if (temp[0] != 0) {
 			System.out.println("Index starting from 1");
 			System.out.println("index1=" + temp[0]);
@@ -33,7 +33,7 @@ public class TwoSum {
 	}
 }
 
-class Solution1 {
+class Solution {
 	public int[] twoSum(int[] nums, int target) {
 		int[] temp = new int[2];
 		for (int i = 0; i < nums.length - 1; i++) {
